@@ -1,6 +1,6 @@
 # Site settings
 title: Project Pages
-description: "An Integrated Scientific Blogging Template"
+description: "Logbuch über manche Dinge, die ich tue."
 url: "https://cmolitor.github.io"
 
 
@@ -8,7 +8,7 @@ url: "https://cmolitor.github.io"
 
 # Secondary Parameters
 baseurl: "/logbook"
-header-img: img/home-bg.jpg
+header-img: img/background.jpg
 headercolor: "#FFFFFF"
 logo: /logbook/img/logos/Project-Pages-New-Logo-Inverted.png
 

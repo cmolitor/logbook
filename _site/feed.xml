@@ -3,10 +3,10 @@
   <channel>
     <title>Project Pages</title>
     <description>Logbuch über manche Dinge, die ich tue.</description>
-    <link>https://cmolitor.github.io/logbook/</link>
-    <atom:link href="https://cmolitor.github.io/logbook/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 03 Mar 2019 14:41:10 +0100</pubDate>
-    <lastBuildDate>Sun, 03 Mar 2019 14:41:10 +0100</lastBuildDate>
+    <link>http://localhost:4000/logbook/</link>
+    <atom:link href="http://localhost:4000/logbook/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 03 Mar 2019 18:57:40 +0100</pubDate>
+    <lastBuildDate>Sun, 03 Mar 2019 18:57:40 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -14,8 +14,8 @@
         <description>
 </description>
         <pubDate>Mon, 02 May 2016 00:00:00 +0200</pubDate>
-        <link>https://cmolitor.github.io/logbook/2016/05/02/New-Surface-Visualization/</link>
-        <guid isPermaLink="true">https://cmolitor.github.io/logbook/2016/05/02/New-Surface-Visualization/</guid>
+        <link>http://localhost:4000/logbook/2016/05/02/New-Surface-Visualization/</link>
+        <guid isPermaLink="true">http://localhost:4000/logbook/2016/05/02/New-Surface-Visualization/</guid>
         
         <category>plysurface</category>
         
@@ -31,8 +31,8 @@
         <description>
 </description>
         <pubDate>Mon, 02 May 2016 00:00:00 +0200</pubDate>
-        <link>https://cmolitor.github.io/logbook/2016/05/02/New-Projector/</link>
-        <guid isPermaLink="true">https://cmolitor.github.io/logbook/2016/05/02/New-Projector/</guid>
+        <link>http://localhost:4000/logbook/2016/05/02/New-Projector/</link>
+        <guid isPermaLink="true">http://localhost:4000/logbook/2016/05/02/New-Projector/</guid>
         
         <category>projector</category>
         
@@ -249,8 +249,8 @@ HighRGB = np.array([26, 152, 80]) / 255.
 
 </description>
         <pubDate>Mon, 02 May 2016 00:00:00 +0200</pubDate>
-        <link>https://cmolitor.github.io/logbook/2016/05/02/New-Presentation/</link>
-        <guid isPermaLink="true">https://cmolitor.github.io/logbook/2016/05/02/New-Presentation/</guid>
+        <link>http://localhost:4000/logbook/2016/05/02/New-Presentation/</link>
+        <guid isPermaLink="true">http://localhost:4000/logbook/2016/05/02/New-Presentation/</guid>
         
         <category>presentation</category>
         
@@ -423,8 +423,8 @@ reg =
 Published with MATLAB® R2014b
 </description>
         <pubDate>Mon, 02 May 2016 00:00:00 +0200</pubDate>
-        <link>https://cmolitor.github.io/logbook/project1/2016/05/02/New-Matlab-Script/</link>
-        <guid isPermaLink="true">https://cmolitor.github.io/logbook/project1/2016/05/02/New-Matlab-Script/</guid>
+        <link>http://localhost:4000/logbook/project1/2016/05/02/New-Matlab-Script/</link>
+        <guid isPermaLink="true">http://localhost:4000/logbook/project1/2016/05/02/New-Matlab-Script/</guid>
         
         <category>matlab</category>
         
@@ -442,8 +442,8 @@ Published with MATLAB® R2014b
         <description>
 </description>
         <pubDate>Sun, 01 May 2016 00:00:00 +0200</pubDate>
-        <link>https://cmolitor.github.io/logbook/project1/2016/05/01/New-Notebook/</link>
-        <guid isPermaLink="true">https://cmolitor.github.io/logbook/project1/2016/05/01/New-Notebook/</guid>
+        <link>http://localhost:4000/logbook/project1/2016/05/01/New-Notebook/</link>
+        <guid isPermaLink="true">http://localhost:4000/logbook/project1/2016/05/01/New-Notebook/</guid>
         
         <category>jupyter</category>
         
@@ -637,8 +637,8 @@ STL
 
 </description>
         <pubDate>Tue, 19 Apr 2016 00:00:00 +0200</pubDate>
-        <link>https://cmolitor.github.io/logbook/project1/2016/04/19/New-Post/</link>
-        <guid isPermaLink="true">https://cmolitor.github.io/logbook/project1/2016/04/19/New-Post/</guid>
+        <link>http://localhost:4000/logbook/project1/2016/04/19/New-Post/</link>
+        <guid isPermaLink="true">http://localhost:4000/logbook/project1/2016/04/19/New-Post/</guid>
         
         <category>post</category>
         

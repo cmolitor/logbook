@@ -1,0 +1,33 @@
+callback([
+
+  {
+    "text": "New Post",
+    "href": "https://cmolitor.github.io/logbook/project1/2016/04/19/New-Post/"
+  } ,
+
+  {
+    "text": "New Notebook",
+    "href": "https://cmolitor.github.io/logbook/project1/2016/05/01/New-Notebook/"
+  } ,
+
+  {
+    "text": "New Matlab Script",
+    "href": "https://cmolitor.github.io/logbook/project1/2016/05/02/New-Matlab-Script/"
+  } ,
+
+  {
+    "text": "New Presentation",
+    "href": "https://cmolitor.github.io/logbook/2016/05/02/New-Presentation/"
+  } ,
+
+  {
+    "text": "New Projector",
+    "href": "https://cmolitor.github.io/logbook/2016/05/02/New-Projector/"
+  } ,
+
+  {
+    "text": "New Surface Visualization",
+    "href": "https://cmolitor.github.io/logbook/2016/05/02/New-Surface-Visualization/"
+  } 
+
+])

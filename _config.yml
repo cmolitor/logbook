@@ -7,14 +7,14 @@ url: "https://cmolitor.github.io"
 
 
 # Secondary Parameters
-baseurl: "/logbuch"
+baseurl: "/logbook"
 header-img: img/home-bg.jpg
 headercolor: "#FFFFFF"
-logo: /logbuch/img/logos/Project-Pages-New-Logo-Inverted.png
+logo: /logbook/img/logos/Project-Pages-New-Logo-Inverted.png
 
 # Tertiary Parameters
 github_username:  cmolitor
-project_repository: logbuch
+project_repository: logbook
 disqus_shortname: 
 g-analytics: UA-75881392-1
 altmetric: true
@@ -41,7 +41,7 @@ defaults:
 # Prose Settings
 prose:
   ignore: ['feed.xml', '/stl', '/ply', '/js', '/plugin', '/lib', '/projectors', '_layouts', '/_includes', 'Gruntfile.js', 'package.json', 'proselinks.jsonp', 'ppanchor.matin', '.gitignore', '/search', '/css', '/img', 'favicon.png','_data/*.json','LICENSES.md','README.md','colorscheme.scss','members.html','mentions.html','index.html']
-  siteurl: 'http://cmolitor.github.io/logbuch/'
+  siteurl: 'http://cmolitor.github.io/logbook/'
   ispp: true
   media: 'img'
   metadata:

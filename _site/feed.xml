@@ -3,10 +3,10 @@
   <channel>
     <title>Logbuch</title>
     <description>Berichte über manche Dinge, die ich tue.</description>
-    <link>http://localhost:4000/logbook/</link>
-    <atom:link href="http://localhost:4000/logbook/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 04 Mar 2019 20:45:42 +0100</pubDate>
-    <lastBuildDate>Mon, 04 Mar 2019 20:45:42 +0100</lastBuildDate>
+    <link>https://cmolitor.github.io/logbook/</link>
+    <atom:link href="https://cmolitor.github.io/logbook/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 04 Mar 2019 21:12:53 +0100</pubDate>
+    <lastBuildDate>Mon, 04 Mar 2019 21:12:53 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -36,8 +36,8 @@ screen /dev/tty.usbmodemXXXXX
 5) Done!
 </description>
         <pubDate>Thu, 23 Aug 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/logbook/project1/2018/08/23/Changing-Wifi-credentials-of-Redbear-Duo-IoT-board/</link>
-        <guid isPermaLink="true">http://localhost:4000/logbook/project1/2018/08/23/Changing-Wifi-credentials-of-Redbear-Duo-IoT-board/</guid>
+        <link>https://cmolitor.github.io/logbook/cheatsheet/2018/08/23/Changing-Wifi-credentials-of-Redbear-Duo-IoT-board/</link>
+        <guid isPermaLink="true">https://cmolitor.github.io/logbook/cheatsheet/2018/08/23/Changing-Wifi-credentials-of-Redbear-Duo-IoT-board/</guid>
         
         <category>RedBear</category>
         
@@ -46,7 +46,7 @@ screen /dev/tty.usbmodemXXXXX
         <category>CheatSheet</category>
         
         
-        <category>project1</category>
+        <category>cheatsheet</category>
         
       </item>
     

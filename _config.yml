@@ -1,16 +1,13 @@
 # Site settings
-title: Project Pages
-description: "Logbuch über manche Dinge, die ich tue."
+title: Logbuch
+description: "Berichte über manche Dinge, die ich tue."
 url: "https://cmolitor.github.io"
-
-
-
 
 # Secondary Parameters
 baseurl: "/logbook"
 header-img: img/background.jpg
 headercolor: "#FFFFFF"
-logo: /logbook/img/logos/Project-Pages-New-Logo-Inverted.png
+# logo: /logbook/img/logos/Project-Pages-New-Logo-Inverted.png
 
 # Tertiary Parameters
 github_username:  cmolitor
@@ -36,7 +33,7 @@ defaults:
       type: "pages"
     values:
       layout: "project"
-      header-img: "img/home-bg.jpg"
+      header-img: "img/background.jpg"
 
 # Prose Settings
 prose:

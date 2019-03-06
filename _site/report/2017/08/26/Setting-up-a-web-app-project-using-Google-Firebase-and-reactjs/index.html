@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Berichte über manche Dinge, die ich tue.">
+	<meta property="og:title" content="Setting up a web app project using Google Firebase and react.js" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:4000//logbook//report/2017/08/26/Setting-up-a-web-app-project-using-Google-Firebase-and-reactjs/" />
+<meta property="og:image" content="http://localhost:4000//logbook/img/background.jpg">
+	
+	
+
+	<meta name="citation_title" content="Project Pages - An Integrated Scientific Blogging Template">
+
+
+<meta name="citation_author" content="Christoph Molitor">
+
+
+<meta name="citation_author" content="David Brough">
+
+
+
+	
+
+	<link rel='shortcut icon' type='image/png' href='/logbook/favicon.png' />
+
+    <title>Setting up a web app project using Google Firebase and react.js - Logbuch</title>
+
+    <link rel="canonical" href="http://localhost:4000/logbook/report/2017/08/26/Setting-up-a-web-app-project-using-Google-Firebase-and-reactjs/">
+	
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="http://localhost:4000/logbook/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="http://localhost:4000/logbook/css/clean-blog.css">
+	
+	<!-- Adjust Colors -->
+    <link rel="stylesheet" href="http://localhost:4000/logbook/colorscheme.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="http://localhost:4000/logbook/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<!-- Math Jax -->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+	<script type="text/javascript"
+	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		TeX: { equationNumbers: { autoNumber: "AMS" } }
+	});
+	</script>
+
+	<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js" type="text/javascript"></script>-->
+
+    <!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="http://localhost:4000/logbook/js/clean-blog.min.js "></script>
+	
+	
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75881392-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/logbook/">Logbuch</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/logbook/">Home</a>
+                </li>
+				
+                <li>
+                    <a href="/logbook/projects/project1/">Berichte</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/logbook/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/logbook/search/">Search</a>
+                </li>
+                
+                <li>
+                    <a href="/logbook/members/">Über mich</a>
+                </li>
+                
+                <li>
+                    <a href="/logbook/mentions/">Community Impact</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/logbook/img/background.jpg');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading" style="padding: 30px 0">
+                    <h1>Setting up a web app project using Google Firebase and react.js</h1>
+                    
+                    <h2 class="subheading">description</h2>
+                    
+                    <span class="meta">Posted by Christoph Molitor on August 26, 2017</span>	
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+	
+	
+	
+	<div class="float-left">
+	<div class="recentpost" style="padding: 10px">
+	
+	<h4> Recently by the same author: </h4> 
+	
+	<hr class="style-one">
+	
+	<a href="/logbook/report/2019/02/17/Finding-and-building-an-agtech-use-case-using-the-Redbear-Duo-IoT-board/"><h2 class="post-title"> Building an Agtech prototpye</h2></a>
+	
+	
+		<h4 class="post-subtitle">Experience on building an IoT prototype for an agtech use case using the Redbear/Particle.io platform in combination with Node-red</h4>
+	
+	
+	<p class="post-meta" style="margin-top: 5px;margin-bottom:5px; font-size: 0.8em">Posted by Christoph Molitor on February 17, 2019</p>
+	
+	<div class="notepad-index-post-tags" style="">
+	<a href="/logbook/search/index.html#AgTech" title="Other posts from the Agtech tag">Agtech</a>&nbsp;<a href="/logbook/search/index.html#Redbear" title="Other posts from the Redbear tag">Redbear</a>
+	</div> 
+	
+			
+ 
+
+<hr class="style-one">
+
+	<img src="../../../../../img/author_christoph.jpg" style="margin-top:0px; margin-bottom:5px; margin:auto; width:120px !important; border-radius: 50%;">
+	
+	<h3>Christoph Molitor</h3>
+	
+	<h4>Dr.-Ing. Elektrotechnik</h4>
+	
+	 
+	<a href="https://github.com/cmolitor" title="Github"><img src="/logbook/img/icons/github-icon.png " style="height:50px; float:right; margin-bot:10px"></a>
+	
+	
+	
+	<a href="http://cmolitor.github.io/" title="Google Plus"><img src="/logbook/img/icons/url-icon.png " style="height:33px; float:right; margin-top:9px;  margin-right: 10px"></a>
+	
+	
+
+
+
+
+	
+	</div>
+	</div>
+	
+	
+	
+	
+		
+	
+
+<!-- Also Interesting -->
+
+
+
+	
+	
+	
+
+	
+	 
+	
+	
+			
+		
+			
+		
+	
+	
+			
+		
+			
+		
+	
+	
+			
+		
+			
+		
+	
+	
+	
+
+	
+	 
+	
+	
+			
+		
+			
+		
+	
+	
+			
+		
+			
+		
+	
+	
+	
+
+	
+	 
+	
+	
+			
+		
+			
+		
+	
+	
+	
+
+	
+	
+	
+
+	
+	 
+	
+	
+	
+
+
+		</div>
+		</div>
+
+<!-- Post Content -->
+<style>
+img {
+	display:block;
+	max-width:  100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+img {
+	-moz-transition:-moz-transform 0.5s ease-in; 
+	-webkit-transition:-webkit-transform 0.5s ease-in; 
+	-o-transition:-o-transform 0.5s ease-in;
+}
+img:active{
+	-moz-transform:scale(1.2); 
+	-webkit-transform:scale(1.2);
+	-o-transform:scale(1.2);
+}
+}
+
+@media only screen and (min-width: 1250px) {
+img {
+	-moz-transition:-moz-transform 0.5s ease-in; 
+	-webkit-transition:-webkit-transform 0.5s ease-in; 
+	-o-transition:-o-transform 0.5s ease-in;
+}
+img:active{
+	-moz-transform:scale(1.5); 
+	-webkit-transform:scale(1.5);
+	-o-transform:scale(1.5);
+}
+}
+
+@media only screen and (min-width: 1500px) {
+img {
+	-moz-transition:-moz-transform 0.5s ease-in; 
+	-webkit-transition:-webkit-transform 0.5s ease-in; 
+	-o-transition:-o-transform 0.5s ease-in;
+}
+img:active{
+	-moz-transform:scale(2); 
+	-webkit-transform:scale(2);
+	-o-transform:scale(2);
+}
+}
+</style>
+
+<article>
+    <div id="content" class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<!-- Start Writing Below in Markdown -->
+
+<p>= Setting up a web app project using Google Firebase and react.js</p>
+
+<p>When I looked for a tutorial how to setup a Google Firebase project using react.js, I could not find many tutorials. 
+Maybe because it is trivial if you are familiar with Firebase and/or react.js.</p>
+
+<p>Basically, what you need to do to setup Google Firebase and react.js are just two steps:</p>
+
+<ol>
+  <li>Create a react.js application using</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>create-react-ap nameOfApp
+</code></pre></div></div>
+
+<ol>
+  <li>Initialize a firebase project within the folder of your react.js application with some specific settings</li>
+</ol>
+
+<p>Here, I assume that you have node.js already installed on your machine. I am running everything on macOS.</p>
+
+<p>In the following I will describe the two steps in more detail.</p>
+
+<p>== 1. Setting up a react.js project</p>
+
+<p>I found the following tutorial really helpful to create a first react.js app. Thus, instead of repeating it here, I recommend to follow the guide:</p>
+
+<p>https://medium.com/@diamondgfx/learning-react-with-create-react-app-part-1-a12e1833fdc</p>
+
+<p>However, at some point I had an issue and had to install:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install --save react-router-dom
+</code></pre></div></div>
+
+<p>But the everything was fine.</p>
+
+<p>Important commands:</p>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">npm start</code> for starting your app on your local machine</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">npm run build</code> to build optimized code which will be put in the folder <code class="highlighter-rouge">build</code></p>
+  </li>
+</ul>
+
+<p>== 2. Setting up Google Firebase project</p>
+
+<p>The following steps have to be executed to setup a Google Firebase project. The source of this description can be found here:
+https://medium.com/@larrysigo/hosting-your-react-app-with-firebase-hosting-add1fa08c214</p>
+
+<p>First you gave to install the firebase-tools and initialize firebase in your project.</p>
+
+<p>Install firebase tools by <code class="highlighter-rouge">npm install -g firebase-tools</code> which install firebase globally so it can be used in the ternimal.</p>
+
+<p>Second you have to initialize the firebase project in your project folder. Navigate there in your terminal and enter the command <code class="highlighter-rouge">firebase login</code><code class="highlighter-rouge">, then login and run the command </code><code class="highlighter-rouge">firebase init</code>`.</p>
+
+<p>Follow the steps on the screen:</p>
+
+<ul>
+  <li>Select the Firebase features you want to use. Here, I chose Database, Hosting and Cloud functions.</li>
+  <li>Firebase command-line interface will pull up your list of Firebase projects, where you can then choose the corresponding project using the up and down keys. Here all projects created in the frírebase online frontend will be listed.</li>
+  <li>Keep the default for the Database Rules file name and just press enter.</li>
+  <li>Pay attention to the question about public directory, which is the directory that will be deployed and served by Firebase. In our case it is <code class="highlighter-rouge">build</code>, which is the folder where our production build is located. Type <code class="highlighter-rouge">build</code> and proceed. If you make a istake here, you can change the public directory in the file <code class="highlighter-rouge">firebase.json</code></li>
+  <li>Firebase will ask you if you want the app to be configured as a single-page app. By default it is “no” — in our case, we could really benefit from the configuration, so we’ll type “y” and press enter. Later on you’ll be able to use react-router and the URLs will just work.</li>
+  <li>Firebase will warn us that we already have “build/index.html,” which we don’t want to be overwritten. Type “n” and press enter to keep our own “index.html,” generated by our build process earlier.</li>
+</ul>
+
+<p>== Further material:</p>
+
+<ul>
+  <li>Alternative/similar guide, I did not try yet: https://www.youtube.com/watch?v=mwNATxfUsgI</li>
+</ul>
+
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/logbook/report/2017/08/24/Mein-erster-Blogeintrag/" data-toggle="tooltip" data-placement="top" title="Mein erster Blogeintrag">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/logbook/report/2017/10/30/Kuchenzeile-mit-IKEA-Kallax/" data-toggle="tooltip" data-placement="top" title="Küchenzeile mit IKEA Kallax">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<hr>
+
+<div class="container" style="padding-right: 50px;padding-left: 50px;">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="disqus_thread">
+
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = '';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+<hr>
+
+
+	
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/logbook/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/cmolitor/logbook">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+									
+                </ul>
+                <p class="copyright text-muted"> Copyright © <a href="http://ahmetcecen.github.io/" target="_blank">Ahmet Cecen</a>,  <a href="http://mined.gatech.edu/" target="_blank">MINED@GaTech</a> and <a href="https://github.com/projectpages" target="_blank">Project Pages</a> 2016. </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+
+</html>

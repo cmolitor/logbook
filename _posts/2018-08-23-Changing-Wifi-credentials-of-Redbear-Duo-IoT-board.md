@@ -4,7 +4,7 @@ title:      Changing Wifi credentials of Redbear Duo IoT board
 author:     Christoph Molitor
 tags: 		RedBear IoT CheatSheet
 subtitle:  	Description how to change wifi settings of RedBear Duo
-category:  	cheatsheet
+category:  	report
 ---
 <!-- Start Writing Below in Markdown -->
 

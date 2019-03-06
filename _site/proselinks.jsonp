@@ -23,11 +23,6 @@ callback([
   {
     "text": "Changing Wifi credentials of Redbear Duo IoT board",
     "href": "http://localhost:4000/logbook/report/2018/08/23/Changing-Wifi-credentials-of-Redbear-Duo-IoT-board/"
-  } ,
-
-  {
-    "text": "Building an Agtech prototpye",
-    "href": "http://localhost:4000/logbook/report/2019/02/17/Finding-and-building-an-agtech-use-case-using-the-Redbear-Duo-IoT-board/"
   } 
 
 ])

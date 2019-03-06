@@ -5,7 +5,7 @@ author:     Christoph Molitor
 tags: 		AgTech Redbear
 subtitle:  	Experience on building an IoT prototype for an agtech use case using the Redbear/Particle.io platform in combination with Node-red
 category:  	report
-published:	true
+published:	false
 ---
 <!-- Start Writing Below in Markdown -->
 

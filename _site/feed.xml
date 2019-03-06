@@ -5,15 +5,15 @@
     <description>Berichte über manche Dinge, die ich tue.</description>
     <link>http://localhost:4000/logbook/</link>
     <atom:link href="http://localhost:4000/logbook/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 06 Mar 2019 06:46:48 +0100</pubDate>
-    <lastBuildDate>Wed, 06 Mar 2019 06:46:48 +0100</lastBuildDate>
+    <pubDate>Wed, 06 Mar 2019 21:43:44 +0100</pubDate>
+    <lastBuildDate>Wed, 06 Mar 2019 21:43:44 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>Changing Wifi credentials of Redbear Duo IoT board</title>
         <description>
 
-At some point I had to change the Wifi credentials of my Redbear Duo board. Following the official instructions at https://github.com/redbear/Duo/blob/master/docs/out_of_box_experience.md I was not able to change the credentials with the Android app. Probably as the app is not anymore maintained.
+At some point I had to change the Wifi credentials of my Redbear Duo board. Following the official instructions, I was not able to change the credentials with the Android app. Probably as the app is not anymore maintained.
 
 Thus, I followed the instructions to use a USB connection and the terminal on macOS to set the Wifi credentials.
 
@@ -25,13 +25,16 @@ Those were the steps:
 
 3) Search and connect to Redbear Duo:
 
-# search for devices:
+search for devices:
 ls /dev/tty.usbmodem*
-# connect to device
+
+connect to device:
 screen /dev/tty.usbmodemXXXXX
 
-
-4) use commands: i: show id, v: show version and w: setup wifi
+4) use commands:
+i: show id
+v: show version
+w: setup wifi
 
 5) Done!
 </description>
@@ -54,22 +57,30 @@ screen /dev/tty.usbmodemXXXXX
         <title>Creating images from a Raspberry Pi</title>
         <description>
 
-== List all mounted devices:
+
+  
+    List all mounted devices:
 diskutil list
 
-Extract the information which diskX is the one of the SD card.
-
-== Unmount device:
+    Extract the information which diskX is the one of the SD card.
+  
+  
+    Unmount device:
 diskutil unmountDisk /dev/diskX
-
-== Create Image:
+  
+  
+    Create Image:
 sudo dd if=/dev/diskX of=/Users/.../NameOfImage.img bs=1m
-
-== Restore image to device:
+  
+  
+    Restore image to device:
 sudo dd bs=1m if=/Users/.../NameOfImage.img of=/dev/diskX
-
-== Compress image:
+  
+  
+    Compress image:
 gzip -fk /Users/.../NameOfImage.img
+  
+
 </description>
         <pubDate>Sun, 26 Nov 2017 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/logbook/report/2017/11/26/Some-notes-on-creating-an-image-from-a-Raspberry-Pi-SD-card-and-restoring-it/</link>
@@ -192,7 +203,7 @@ http://www.ebay.de/itm/361207035435
         <title>Setting up a web app project using Google Firebase and react.js</title>
         <description>
 
-= Setting up a web app project using Google Firebase and react.js
+Setting up a web app project using Google Firebase and react.js
 
 When I looked for a tutorial how to setup a Google Firebase project using react.js, I could not find many tutorials. 
 Maybe because it is trivial if you are familiar with Firebase and/or react.js.
@@ -200,32 +211,29 @@ Maybe because it is trivial if you are familiar with Firebase and/or react.js.
 Basically, what you need to do to setup Google Firebase and react.js are just two steps:
 
 
-  Create a react.js application using
+  
+    Create a react.js application using
 
+    create-react-ap nameOfApp
+  
+  
+    Initialize a firebase project within the folder of your react.js application with some specific settings
 
-create-react-ap nameOfApp
+    Here, I assume that you have node.js already installed on your machine. I am running everything on macOS.
+  
 
-
-
-  Initialize a firebase project within the folder of your react.js application with some specific settings
-
-
-Here, I assume that you have node.js already installed on your machine. I am running everything on macOS.
 
 In the following I will describe the two steps in more detail.
 
-== 1. Setting up a react.js project
+1. Setting up a react.js project
 
-I found the following tutorial really helpful to create a first react.js app. Thus, instead of repeating it here, I recommend to follow the guide:
-
-https://medium.com/@diamondgfx/learning-react-with-create-react-app-part-1-a12e1833fdc
+I found the following tutorial really helpful to create a first react.js app. Thus, instead of repeating it here, I recommend to follow this guide.
 
 However, at some point I had an issue and had to install:
 
 npm install --save react-router-dom
 
-
-But the everything was fine.
+But then everything was fine.
 
 Important commands:
 
@@ -238,7 +246,7 @@ Important commands:
   
 
 
-== 2. Setting up Google Firebase project
+2. Setting up Google Firebase project
 
 The following steps have to be executed to setup a Google Firebase project. The source of this description can be found here:
 https://medium.com/@larrysigo/hosting-your-react-app-with-firebase-hosting-add1fa08c214
@@ -260,7 +268,7 @@ Follow the steps on the screen:
   Firebase will warn us that we already have “build/index.html,” which we don’t want to be overwritten. Type “n” and press enter to keep our own “index.html,” generated by our build process earlier.
 
 
-== Further material:
+Further material:
 
 
   Alternative/similar guide, I did not try yet: https://www.youtube.com/watch?v=mwNATxfUsgI

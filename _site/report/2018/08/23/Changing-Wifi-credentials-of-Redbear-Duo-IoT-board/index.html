@@ -317,7 +317,7 @@ img:active{
 
 				<!-- Start Writing Below in Markdown -->
 
-<p>At some point I had to change the Wifi credentials of my Redbear Duo board. Following the official instructions at https://github.com/redbear/Duo/blob/master/docs/out_of_box_experience.md I was not able to change the credentials with the Android app. Probably as the app is not anymore maintained.</p>
+<p>At some point I had to change the Wifi credentials of my Redbear Duo board. Following the <a href="https://github.com/redbear/Duo/blob/master/docs/out_of_box_experience.md">official instructions</a>, I was not able to change the credentials with the Android app. Probably as the app is not anymore maintained.</p>
 
 <p>Thus, I followed the instructions to use a USB connection and the terminal on macOS to set the Wifi credentials.</p>
 
@@ -329,13 +329,16 @@ img:active{
 
 <p>3) Search and connect to Redbear Duo:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># search for devices:
-ls /dev/tty.usbmodem*
-# connect to device
-screen /dev/tty.usbmodemXXXXX
-</code></pre></div></div>
+<p>search for devices:
+<code class="highlighter-rouge">ls /dev/tty.usbmodem*</code></p>
 
-<p>4) use commands: i: show id, v: show version and w: setup wifi</p>
+<p>connect to device:
+<code class="highlighter-rouge">screen /dev/tty.usbmodemXXXXX</code></p>
+
+<p>4) use commands:
+<code class="highlighter-rouge">i: show id</code>
+<code class="highlighter-rouge">v: show version</code>
+<code class="highlighter-rouge">w: setup wifi</code></p>
 
 <p>5) Done!</p>
 

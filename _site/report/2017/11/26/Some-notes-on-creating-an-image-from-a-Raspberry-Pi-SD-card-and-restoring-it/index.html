@@ -333,22 +333,30 @@ img:active{
 
 				<!-- Start Writing Below in Markdown -->
 
-<p>== List all mounted devices:
+<ol>
+  <li>
+    <p>List all mounted devices:
 <code class="highlighter-rouge">diskutil list</code></p>
 
-<p>Extract the information which diskX is the one of the SD card.</p>
-
-<p>== Unmount device:
+    <p>Extract the information which diskX is the one of the SD card.</p>
+  </li>
+  <li>
+    <p>Unmount device:
 <code class="highlighter-rouge">diskutil unmountDisk /dev/diskX</code></p>
-
-<p>== Create Image:
+  </li>
+  <li>
+    <p>Create Image:
 <code class="highlighter-rouge">sudo dd if=/dev/diskX of=/Users/.../NameOfImage.img bs=1m</code></p>
-
-<p>== Restore image to device:
+  </li>
+  <li>
+    <p>Restore image to device:
 <code class="highlighter-rouge">sudo dd bs=1m if=/Users/.../NameOfImage.img of=/dev/diskX</code></p>
-
-<p>== Compress image:
+  </li>
+  <li>
+    <p>Compress image:
 <code class="highlighter-rouge">gzip -fk /Users/.../NameOfImage.img</code></p>
+  </li>
+</ol>
 
 
                 <hr>

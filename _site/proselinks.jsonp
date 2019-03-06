@@ -1,5 +1,6 @@
 callback([
 
+
   {
     "text": "Mein erster Blogeintrag",
     "href": "http://localhost:4000/logbook/report/2017/08/24/Mein-erster-Blogeintrag/"

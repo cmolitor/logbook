@@ -1,7 +1,7 @@
 # Site settings
 title: Logbuch
 description: "Berichte über manche Dinge, die ich tue."
-url: "https://cmolitor.github.io"
+url: "https://molitor.online"
 
 # Secondary Parameters
 baseurl: "/logbook"

@@ -3,11 +3,59 @@
   <channel>
     <title>Logbuch</title>
     <description>Berichte über manche Dinge, die ich tue.</description>
-    <link>http://localhost:4000/logbook/</link>
-    <atom:link href="http://localhost:4000/logbook/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 06 Mar 2019 21:43:44 +0100</pubDate>
-    <lastBuildDate>Wed, 06 Mar 2019 21:43:44 +0100</lastBuildDate>
+    <link>https://molitor.online/logbook//</link>
+    <atom:link href="https://molitor.online/logbook//feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 14 Apr 2019 22:48:54 +0200</pubDate>
+    <lastBuildDate>Sun, 14 Apr 2019 22:48:54 +0200</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Using SSL for Grafana</title>
+        <description>
+
+Securing my Grafana dashboards with https using letsencrypt.org
+
+Initial setup
+Actually I followed the description of the following website (in german):
+Freifunk Winterberg
+
+The procedure describes the setup of grafana using a SSL certificate provided by letsencrypt.org
+
+Renewal of certificate
+
+Once in while (I don’t remember the exact duration), you have to renew your certifcate by using the following command:
+
+sudo certbot certonly
+
+
+Routing of incoming https traffic to grafana port (port 3000)
+
+In order to redirect the https traffic to the grafana port (port 3000), you have to configure the routing with the followig command, which redirects traffic at port 443 (https) to port 3000 (grafana).
+sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-port 3000
+
+
+If you like to check your routing table, sue the following command:
+iptables -t nat -L --line-numbers
+
+
+If you want to delete some set routing, e.g in line number 1, use the following command:
+iptables -t nat -D PREROUTING 1
+
+</description>
+        <pubDate>Sun, 14 Apr 2019 00:00:00 +0200</pubDate>
+        <link>https://molitor.online/logbook//report/2019/04/14/Letsencrypt-Grafana-Routing/</link>
+        <guid isPermaLink="true">https://molitor.online/logbook//report/2019/04/14/Letsencrypt-Grafana-Routing/</guid>
+        
+        <category>Grafana</category>
+        
+        <category>SSL</category>
+        
+        <category>CheatSheet</category>
+        
+        
+        <category>report</category>
+        
+      </item>
     
       <item>
         <title>Changing Wifi credentials of Redbear Duo IoT board</title>
@@ -39,8 +87,8 @@ w: setup wifi
 5) Done!
 </description>
         <pubDate>Thu, 23 Aug 2018 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/logbook/report/2018/08/23/Changing-Wifi-credentials-of-Redbear-Duo-IoT-board/</link>
-        <guid isPermaLink="true">http://localhost:4000/logbook/report/2018/08/23/Changing-Wifi-credentials-of-Redbear-Duo-IoT-board/</guid>
+        <link>https://molitor.online/logbook//report/2018/08/23/Changing-Wifi-credentials-of-Redbear-Duo-IoT-board/</link>
+        <guid isPermaLink="true">https://molitor.online/logbook//report/2018/08/23/Changing-Wifi-credentials-of-Redbear-Duo-IoT-board/</guid>
         
         <category>RedBear</category>
         
@@ -83,8 +131,8 @@ gzip -fk /Users/.../NameOfImage.img
 
 </description>
         <pubDate>Sun, 26 Nov 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/logbook/report/2017/11/26/Some-notes-on-creating-an-image-from-a-Raspberry-Pi-SD-card-and-restoring-it/</link>
-        <guid isPermaLink="true">http://localhost:4000/logbook/report/2017/11/26/Some-notes-on-creating-an-image-from-a-Raspberry-Pi-SD-card-and-restoring-it/</guid>
+        <link>https://molitor.online/logbook//report/2017/11/26/Some-notes-on-creating-an-image-from-a-Raspberry-Pi-SD-card-and-restoring-it/</link>
+        <guid isPermaLink="true">https://molitor.online/logbook//report/2017/11/26/Some-notes-on-creating-an-image-from-a-Raspberry-Pi-SD-card-and-restoring-it/</guid>
         
         <category>RaspberryPi</category>
         
@@ -189,8 +237,8 @@ http://www.ebay.de/itm/361207035435
 
 </description>
         <pubDate>Mon, 30 Oct 2017 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/logbook/report/2017/10/30/Kuchenzeile-mit-IKEA-Kallax/</link>
-        <guid isPermaLink="true">http://localhost:4000/logbook/report/2017/10/30/Kuchenzeile-mit-IKEA-Kallax/</guid>
+        <link>https://molitor.online/logbook//report/2017/10/30/Kuchenzeile-mit-IKEA-Kallax/</link>
+        <guid isPermaLink="true">https://molitor.online/logbook//report/2017/10/30/Kuchenzeile-mit-IKEA-Kallax/</guid>
         
         <category>IKEA</category>
         
@@ -275,8 +323,8 @@ Further material:
 
 </description>
         <pubDate>Sat, 26 Aug 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/logbook/report/2017/08/26/Setting-up-a-web-app-project-using-Google-Firebase-and-reactjs/</link>
-        <guid isPermaLink="true">http://localhost:4000/logbook/report/2017/08/26/Setting-up-a-web-app-project-using-Google-Firebase-and-reactjs/</guid>
+        <link>https://molitor.online/logbook//report/2017/08/26/Setting-up-a-web-app-project-using-Google-Firebase-and-reactjs/</link>
+        <guid isPermaLink="true">https://molitor.online/logbook//report/2017/08/26/Setting-up-a-web-app-project-using-Google-Firebase-and-reactjs/</guid>
         
         <category>Firebase</category>
         
@@ -296,8 +344,8 @@ Mein erster Blogeintrag
 Hier in diesem Blog werde ich über verschiedene technische Themen berichten, mit denen ich mich gerade beschäftige. Die Berichte dienen hauptsächlich zu meiner eigenen Dokumentation und können vielleicht auch für jemand anderen hilfreich sein.
 </description>
         <pubDate>Thu, 24 Aug 2017 00:00:00 +0200</pubDate>
-        <link>http://localhost:4000/logbook/report/2017/08/24/Mein-erster-Blogeintrag/</link>
-        <guid isPermaLink="true">http://localhost:4000/logbook/report/2017/08/24/Mein-erster-Blogeintrag/</guid>
+        <link>https://molitor.online/logbook//report/2017/08/24/Mein-erster-Blogeintrag/</link>
+        <guid isPermaLink="true">https://molitor.online/logbook//report/2017/08/24/Mein-erster-Blogeintrag/</guid>
         
         
         <category>report</category>

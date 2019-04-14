@@ -4,7 +4,7 @@ description: "Berichte über manche Dinge, die ich tue."
 url: "https://molitor.online"
 
 # Secondary Parameters
-baseurl: "/logbook/"
+baseurl: "/"
 header-img: img/background.jpg
 headercolor: "#FFFFFF"
 # logo: /logbook/img/logos/Project-Pages-New-Logo-Inverted.png

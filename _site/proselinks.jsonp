@@ -29,6 +29,11 @@ callback([
   {
     "text": "Using SSL for Grafana",
     "href": "http://localhost:4000/logbook/report/2019/04/14/Letsencrypt-Grafana-Routing/"
+  } ,
+
+  {
+    "text": "How to setup the Adeunis Field Test Device under macOS",
+    "href": "http://localhost:4000/logbook/report/2019/05/05/Configuring-Adeunis-Field-Tester-using-macOS-CoolTerm/"
   } 
 
 ])

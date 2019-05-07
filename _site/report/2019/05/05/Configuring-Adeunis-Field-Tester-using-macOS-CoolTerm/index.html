@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Berichte über manche Dinge, die ich tue.">
+	<meta property="og:title" content="How to setup the Adeunis Field Test Device under macOS" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:4000//logbook//report/2019/05/05/Configuring-Adeunis-Field-Tester-using-macOS-CoolTerm/" />
+<meta property="og:image" content="http://localhost:4000//logbook/img/background.jpg">
+	
+	
+
+	<meta name="citation_title" content="Project Pages - An Integrated Scientific Blogging Template">
+
+
+<meta name="citation_author" content="Christoph Molitor">
+
+
+<meta name="citation_author" content="David Brough">
+
+
+
+	
+
+	<link rel='shortcut icon' type='image/png' href='/logbook/favicon.png' />
+
+    <title>How to setup the Adeunis Field Test Device under macOS - Logbuch</title>
+
+    <link rel="canonical" href="http://localhost:4000/logbook/report/2019/05/05/Configuring-Adeunis-Field-Tester-using-macOS-CoolTerm/">
+	
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="http://localhost:4000/logbook/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="http://localhost:4000/logbook/css/clean-blog.css">
+	
+	<!-- Adjust Colors -->
+    <link rel="stylesheet" href="http://localhost:4000/logbook/colorscheme.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="http://localhost:4000/logbook/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<!-- Math Jax -->
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+	<script type="text/javascript"
+	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+	<script type="text/x-mathjax-config">
+	MathJax.Hub.Config({
+		TeX: { equationNumbers: { autoNumber: "AMS" } }
+	});
+	</script>
+
+	<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js" type="text/javascript"></script>-->
+
+    <!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="http://localhost:4000/logbook/js/clean-blog.min.js "></script>
+	
+	
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75881392-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/logbook/">Logbuch</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/logbook/">Home</a>
+                </li>
+				
+                <li>
+                    <a href="/logbook/projects/project1/">Berichte</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/logbook/about/">About</a>
+                </li>
+                
+                <li>
+                    <a href="/logbook/search/">Search</a>
+                </li>
+                
+                <li>
+                    <a href="/logbook/members/">Über mich</a>
+                </li>
+                
+                <li>
+                    <a href="/logbook/mentions/">Community Impact</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/logbook/img/background.jpg');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading" style="padding: 30px 0">
+                    <h1>How to setup the Adeunis Field Test Device under macOS</h1>
+                    
+                    <h2 class="subheading">Configuring LoRaWAN Adeunis Field Test device using macOS and CoolTerm</h2>
+                    
+                    <span class="meta">Posted by Christoph Molitor on May 5, 2019</span>	
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+	
+	
+		
+	
+
+<!-- Also Interesting -->
+
+
+
+	
+	
+	
+
+	
+	 
+	
+	
+			
+		
+			
+		
+	
+	
+			
+		
+			
+		
+	
+	
+			
+		
+			
+		
+	
+	
+	
+
+	
+	 
+	
+	
+			
+		
+			
+		
+	
+	
+			
+		
+			
+		
+	
+	
+			
+		
+			
+		
+	
+	
+	
+
+	
+	 
+	
+	
+			
+		
+			
+		
+	
+	
+			
+		
+			
+		
+	
+	
+	
+
+	
+	 
+	
+	
+			
+		
+			
+		
+	
+	
+	
+
+	
+	 
+	
+	
+			
+		
+			
+		
+	
+	
+			
+		
+			
+		
+	
+	
+	
+
+	
+	 
+	
+	
+	
+
+
+		</div>
+		</div>
+
+<!-- Post Content -->
+<style>
+img {
+	display:block;
+	max-width:  100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+img {
+	-moz-transition:-moz-transform 0.5s ease-in; 
+	-webkit-transition:-webkit-transform 0.5s ease-in; 
+	-o-transition:-o-transform 0.5s ease-in;
+}
+img:active{
+	-moz-transform:scale(1.2); 
+	-webkit-transform:scale(1.2);
+	-o-transform:scale(1.2);
+}
+}
+
+@media only screen and (min-width: 1250px) {
+img {
+	-moz-transition:-moz-transform 0.5s ease-in; 
+	-webkit-transition:-webkit-transform 0.5s ease-in; 
+	-o-transition:-o-transform 0.5s ease-in;
+}
+img:active{
+	-moz-transform:scale(1.5); 
+	-webkit-transform:scale(1.5);
+	-o-transform:scale(1.5);
+}
+}
+
+@media only screen and (min-width: 1500px) {
+img {
+	-moz-transition:-moz-transform 0.5s ease-in; 
+	-webkit-transition:-webkit-transform 0.5s ease-in; 
+	-o-transition:-o-transform 0.5s ease-in;
+}
+img:active{
+	-moz-transform:scale(2); 
+	-webkit-transform:scale(2);
+	-o-transform:scale(2);
+}
+}
+</style>
+
+<article>
+    <div id="content" class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<!-- Start Writing Below in Markdown -->
+
+<h2 id="background">Background</h2>
+
+<p>Lately I was testing the LoRaWAN coverage of our deployed gateways with an <a href="https://www.adeunis.com/en/produit/ftd-868-915-2/">Adeunis Field Test Device</a>. 
+For the coverage test I wanted to change some settings of Adeunis Field Test Device. More specific: I wanted the device to send an Uplink message more frequently (default interval is 10 minutes).</p>
+
+<p>Looking for a manual to change the settings of the device, I found the following detailed device description (german) provided by 
+<a href="https://smartmakers.io/de/test-adeunis-868-field-test-device/">Smartmakers</a>.</p>
+
+<p>However, it took me a while to figure out how to configure the Adeunis Field Test Device using macOS and CoolTerm, as the Smartmaker description is for Windows systems. So here a short description how to do it on a Mac. Check out also the video demo below.</p>
+
+<h2 id="general-setup">General setup</h2>
+
+<p>As I am using a Mac, I found and used <a href="https://freeware.the-meiers.org">CoolTerm</a> to connect via a serial connection with the Adeunis.
+I connected the Adeunis Field Test Device with an USB cable with my Mac.</p>
+
+<h2 id="steps-to-change-settings-of-adeunis-field-test-device">Steps to change settings of Adeunis Field Test Device</h2>
+
+<p>Here a short description of the steps to change the settings of the Adeunis Field Test Device. Please see the video for details.</p>
+
+<ol>
+  <li>
+    <p>Connecting to Adeunis Field Test Device</p>
+
+    <ol>
+      <li>Connect Adeunis Field Test Device via USB cable</li>
+      <li>Turn Adeunis Field Test Device on</li>
+      <li>Open CoolTerm</li>
+      <li>Connection (menu) -&gt; Options -&gt; if necessary: rescan</li>
+      <li>Set proper connection settings</li>
+      <li>Confirm with “OK”</li>
+      <li>Press “Connect”</li>
+    </ol>
+  </li>
+  <li>
+    <p>After successful connection, you will receive some output on the CoolTerm terminal each time a LoRaWAN message is transmitted. You can transmit a message by pressing the physical button on the Adeunis Field Test Device.</p>
+  </li>
+  <li>
+    <p>Enter “Command Mode” to change settings of Adeunis Field Test Device</p>
+
+    <p>In order to change settings of the Adeunis Field Test Device, you have to enter the “Command mode (CM)”. Here, I got stuck as I did not know how to append “CR” and ”LF” to the raw hex command as described in the Smartmakers manual. Following steps worked:</p>
+
+    <ol>
+      <li>Connection (menu) -&gt; Send String</li>
+      <li>Select “Hex”</li>
+      <li>Enter “FF FF FF FF FF 2B 2B 2B”</li>
+      <li>Select “ASCII”</li>
+      <li>Hit “Enter” at the end of the command</li>
+      <li>Select “Hex”</li>
+      <li>Now you see that an “0D 0A” has been attached to the line. Actually, this is “CR” and ”LF”. So next time you can just enter it, instead of switching back to ASCII and hit “Enter”.</li>
+      <li>Press “Send”</li>
+      <li>CoolTerm should print “CM” in the terminal</li>
+      <li>Adeunis Field Test Device shows “CM” on the display.</li>
+    </ol>
+  </li>
+  <li>
+    <p>Send further commands and change settings of Adeunis Field Test Device</p>
+  </li>
+</ol>
+
+<p>Now, you can send for example the command “AT/V” in ASCII (don’t forget to hit enter (“CR” + “LF”) after the “AT/V” command) to read the version or “AT/S” in ASCII to read the settings. To change the sending interval use “ATS380=60” in ASCII to set the interval to 60 seconds.
+To leave the “command mode” send “AT0” in ASCII.</p>
+
+<h2 id="video-demo-to-connect-and-change-settings-of-adeunis-field-test-device">Video demo to connect and change settings of Adeunis Field Test Device</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mevORtabUOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/logbook/report/2019/04/14/Letsencrypt-Grafana-Routing/" data-toggle="tooltip" data-placement="top" title="Using SSL for Grafana">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<hr>
+
+<div class="container" style="padding-right: 50px;padding-left: 50px;">
+<div class="row">
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="disqus_thread">
+
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = '';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+<hr>
+
+
+	
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    <li>
+                        <a href="/logbook/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/cmolitor/logbook">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+									
+                </ul>
+                <p class="copyright text-muted"> Copyright © <a href="http://ahmetcecen.github.io/" target="_blank">Ahmet Cecen</a>,  <a href="http://mined.gatech.edu/" target="_blank">MINED@GaTech</a> and <a href="https://github.com/projectpages" target="_blank">Project Pages</a> 2016. </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+
+</html>

@@ -64,7 +64,7 @@ After setting up the RedBear Duo and the particle Web IDE, I started to develop 
 The latest version of the code, I developed can be found [here at Github](https://github.com/cmolitor/lely_smartgate/tree/master).
 
 The final breadboard setup looks like depicted here:
-![Breadboard](/logbook/assets/readbearduo/setup_breadboard.jpg)
+![Breadboard](/assets/readbearduo/setup_breadboard.jpg)
 
 In accordance with the previous described substasks, I proceeded the following way:
 

@@ -1,9 +1,17 @@
 ---
 layout: page
-title: "About"
-description: "Why use Project Pages?"
+title: "Impressum"
+description: "Impressum"
 header-img: "img/background.jpg"
+published:  true
 ---
 
-Project Pages is a research blog tool that allows you to quickly show your latest results to an advisor, collaborators or your mom.
-	
+
+Christoph Molitor  
+Am Steinernen Kreuz  
+65933 Frankfurt  
+
+Telefon: 0176/40341233  
+E-Mail: christoph-molitor@gmx.de
+
+Inhaltlich Verantwortlicher gem. § 55 II RStV: Christoph Molitor (Anschrift s.o.)

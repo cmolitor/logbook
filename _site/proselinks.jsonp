@@ -34,6 +34,11 @@ callback([
   {
     "text": "How to setup the Adeunis Field Test Device under macOS",
     "href": "http://localhost:4000/logbook/report/2019/05/05/Configuring-Adeunis-Field-Tester-using-macOS-CoolTerm/"
+  } ,
+
+  {
+    "text": "A smart gate for a milking robot",
+    "href": "http://localhost:4000/logbook/report/2019/05/31/Finding-and-building-an-agtech-use-case-using-the-Redbear-Duo-IoT-board/"
   } 
 
 ])

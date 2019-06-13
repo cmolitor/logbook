@@ -55,9 +55,9 @@ After setting up a Particle.io account, I could claim my RedBear Duo device on t
 
 The Particle Web IDE allows you to manage your devices, projects and used libraries easily. See here some screen shots.
 
-![Particle Web IDE - Apps](/logbook/assets/readbearduo/particleio.png)
+![Particle Web IDE - Apps](/assets/readbearduo/particleio.png)
 
-![Particle Web IDE - Library Browser](/logbook/assets/readbearduo/particleio_lib.png)
+![Particle Web IDE - Library Browser](/assets/readbearduo/particleio_lib.png)
 
 After setting up the RedBear Duo and the particle Web IDE, I started to develop the code while adding the external hardware (here: display, button and rotary knob) one after the other.
 
@@ -108,9 +108,9 @@ In accordance with the previous described substasks, I proceeded the following w
 
     Here, I was using my already existing Node-RED setup. However, also the use of a service like IFTTT or others could be an alternative solution.
 
-    ![Flow in Node-RED](/logbook/assets/readbearduo/nodered_flow.png)
+    ![Flow in Node-RED](/assets/readbearduo/nodered_flow.png)
 
-    <img src="/logbook/assets/readbearduo/nodered_composeemail.png" alt="Code of Compose Email Node in Node-RED" style="width: 80%"/>
+    <img src="/assets/readbearduo/nodered_composeemail.png" alt="Code of Compose Email Node in Node-RED" style="width: 80%"/>
     
 
 ## Installing all components in a deployable case
@@ -133,12 +133,12 @@ After mounting all the components in the deployable case, it is time to put the 
 
 First the door contacts are mounted on the gate through which the cows leave the milking robot. See the picture below.
 
-![Mounted door contacts](/logbook/assets/readbearduo/mounting_door_contact.jpg)
+![Mounted door contacts](/assets/readbearduo/mounting_door_contact.jpg)
 
 
 After this the case with user interface consisting of the display and the rotary knob is mounted at the housing of the milking robot where it can be easily reached by the user.
 
-![Monuted case](/logbook/assets/readbearduo/mounting_case.jpg)
+![Monuted case](/assets/readbearduo/mounting_case.jpg)
 
 The following video demonstartes the setting of the number of cows.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pnrxK1ZnHJY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

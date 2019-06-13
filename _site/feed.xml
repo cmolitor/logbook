@@ -5,8 +5,8 @@
     <description>Berichte über manche Dinge, die ich tue.</description>
     <link>http://localhost:4000/logbook/</link>
     <atom:link href="http://localhost:4000/logbook/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 13 Jun 2019 22:10:21 +0200</pubDate>
-    <lastBuildDate>Thu, 13 Jun 2019 22:10:21 +0200</lastBuildDate>
+    <pubDate>Thu, 13 Jun 2019 22:19:35 +0200</pubDate>
+    <lastBuildDate>Thu, 13 Jun 2019 22:19:35 +0200</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>

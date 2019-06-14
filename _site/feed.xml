@@ -5,8 +5,8 @@
     <description>Berichte über manche Dinge, die ich tue.</description>
     <link>http://localhost:4000/logbook/</link>
     <atom:link href="http://localhost:4000/logbook/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 14 Jun 2019 21:40:48 +0200</pubDate>
-    <lastBuildDate>Fri, 14 Jun 2019 21:40:48 +0200</lastBuildDate>
+    <pubDate>Fri, 14 Jun 2019 21:47:42 +0200</pubDate>
+    <lastBuildDate>Fri, 14 Jun 2019 21:47:42 +0200</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -63,8 +63,6 @@ The Particle Web IDE allows you to manage your devices, projects and used librar
 
 
 
-
-
 After setting up the RedBear Duo and the particle Web IDE, I started to develop the code while adding the external hardware (here: display, button and rotary knob) one after the other.
 
 The latest version of the code, I developed can be found here at Github.
@@ -117,8 +115,7 @@ In accordance with the previous described substasks, I proceeded the following w
  For triggering the e-mail a specific topic has to be triggered. Furthermore, the RedBear Duo client has a unique user and password for connecting to the MQTT server.
 
     Here, I was using my already existing Node-RED setup. However, also the use of a service like IFTTT or others could be an alternative solution.
-
-    
+ 
 
     
   
@@ -145,9 +142,7 @@ After mounting all the components in the deployable case, it is time to put the 
 First the door contacts are mounted on the gate through which the cows leave the milking robot. See the picture below.
 
 
-
 After this the case with user interface consisting of the display and the rotary knob is mounted at the housing of the milking robot where it can be easily reached by the user.
-
 
 
 The following video demonstartes the setting of the number of cows.

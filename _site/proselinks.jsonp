@@ -39,6 +39,11 @@ callback([
   {
     "text": "A smart gate for a milking robot",
     "href": "http://localhost:4000/logbook/report/2019/05/31/Finding-and-building-an-agtech-use-case-using-the-Redbear-Duo-IoT-board/"
+  } ,
+
+  {
+    "text": "Adjusting measurement data in influxdb",
+    "href": "http://localhost:4000/logbook/report/2019/07/19/Correcting-wrong-measurement-data-influxdb/"
   } 
 
 ])

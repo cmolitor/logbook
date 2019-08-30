@@ -18,11 +18,17 @@ The procedure describes the setup of grafana using a SSL certificate provided by
 
 ## Renewal of certificate
 
-Once in while (I don't remember the exact duration), you have to renew your certifcate by using the following command:
+Once in while (I don't remember the exact duration), you have to renew your certificate by using the following command:
 
 ```
 sudo certbot certonly
 ```
+
+After renewing the certificate you have to restart grafana:
+```
+sudo service grafana-server restart
+```
+
 
 ## Routing of incoming https traffic to grafana port (port 3000)
 

@@ -3,47 +3,47 @@ callback([
 
   {
     "text": "Mein erster Blogeintrag",
-    "href": "http://localhost:4000/logbook/report/2017/08/24/Mein-erster-Blogeintrag/"
+    "href": "https://molitor.online//report/2017/08/24/Mein-erster-Blogeintrag/"
   } ,
 
   {
     "text": "Setting up a web app project using Google Firebase and react.js",
-    "href": "http://localhost:4000/logbook/report/2017/08/26/Setting-up-a-web-app-project-using-Google-Firebase-and-reactjs/"
+    "href": "https://molitor.online//report/2017/08/26/Setting-up-a-web-app-project-using-Google-Firebase-and-reactjs/"
   } ,
 
   {
     "text": "Küchenzeile mit IKEA Kallax",
-    "href": "http://localhost:4000/logbook/report/2017/10/30/Kuchenzeile-mit-IKEA-Kallax/"
+    "href": "https://molitor.online//report/2017/10/30/Kuchenzeile-mit-IKEA-Kallax/"
   } ,
 
   {
     "text": "Creating images from a Raspberry Pi",
-    "href": "http://localhost:4000/logbook/report/2017/11/26/Some-notes-on-creating-an-image-from-a-Raspberry-Pi-SD-card-and-restoring-it/"
+    "href": "https://molitor.online//report/2017/11/26/Some-notes-on-creating-an-image-from-a-Raspberry-Pi-SD-card-and-restoring-it/"
   } ,
 
   {
     "text": "Changing Wifi credentials of Redbear Duo IoT board",
-    "href": "http://localhost:4000/logbook/report/2018/08/23/Changing-Wifi-credentials-of-Redbear-Duo-IoT-board/"
+    "href": "https://molitor.online//report/2018/08/23/Changing-Wifi-credentials-of-Redbear-Duo-IoT-board/"
   } ,
 
   {
     "text": "Using SSL for Grafana",
-    "href": "http://localhost:4000/logbook/report/2019/04/14/Letsencrypt-Grafana-Routing/"
+    "href": "https://molitor.online//report/2019/04/14/Letsencrypt-Grafana-Routing/"
   } ,
 
   {
     "text": "How to setup the Adeunis Field Test Device under macOS",
-    "href": "http://localhost:4000/logbook/report/2019/05/05/Configuring-Adeunis-Field-Tester-using-macOS-CoolTerm/"
+    "href": "https://molitor.online//report/2019/05/05/Configuring-Adeunis-Field-Tester-using-macOS-CoolTerm/"
   } ,
 
   {
     "text": "A smart gate for a milking robot",
-    "href": "http://localhost:4000/logbook/report/2019/05/31/Finding-and-building-an-agtech-use-case-using-the-Redbear-Duo-IoT-board/"
+    "href": "https://molitor.online//report/2019/05/31/Finding-and-building-an-agtech-use-case-using-the-Redbear-Duo-IoT-board/"
   } ,
 
   {
     "text": "Adjusting measurement data in influxdb",
-    "href": "http://localhost:4000/logbook/report/2019/07/19/Correcting-wrong-measurement-data-influxdb/"
+    "href": "https://molitor.online//report/2019/07/19/Correcting-wrong-measurement-data-influxdb/"
   } 
 
 ])
